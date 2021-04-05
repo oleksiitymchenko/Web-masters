@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Abstractions
 {
-    interface IRepository<TEntity> where TEntity: IBaseEntity
+    public interface IRepository<TEntity> where TEntity: IBaseEntity
     {
         Task<TEntity> GetById(Guid id);
         Task<TEntity> Create(TEntity entity);

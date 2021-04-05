@@ -8,8 +8,4 @@
     <ProjectReference Include="..\DAL.Models\DAL.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
