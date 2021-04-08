@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopCrud", "ShopCrud\ShopCrud.csproj", "{F75A2C93-7F03-49E9-AA8D-67F045000530}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopCrud", "ShopCrud\ShopCrud.csproj", "{F75A2C93-7F03-49E9-AA8D-67F045000530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Abstractions", "DAL.Abstractions\DAL.Abstractions.csproj", "{546F1252-8EBE-4EDA-A25E-89094CA7AA20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Abstractions", "DAL.Abstractions\DAL.Abstractions.csproj", "{546F1252-8EBE-4EDA-A25E-89094CA7AA20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Impl.Adonet", "DAL.Impl.Adonet\DAL.Impl.Adonet.csproj", "{52024143-669F-4674-AF6E-437C8BFD33E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Impl.Adonet", "DAL.Impl.Adonet\DAL.Impl.Adonet.csproj", "{52024143-669F-4674-AF6E-437C8BFD33E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Models", "DAL.Models\DAL.Models.csproj", "{BFEF9918-28AB-4D0E-B553-877A38143ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Models", "DAL.Models\DAL.Models.csproj", "{BFEF9918-28AB-4D0E-B553-877A38143ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Impl.Ef", "DAL.Impl.Ef\DAL.Impl.Ef.csproj", "{B3354692-A743-4CBF-9185-B64F57C97470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BFEF9918-28AB-4D0E-B553-877A38143ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFEF9918-28AB-4D0E-B553-877A38143ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFEF9918-28AB-4D0E-B553-877A38143ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3354692-A743-4CBF-9185-B64F57C97470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3354692-A743-4CBF-9185-B64F57C97470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3354692-A743-4CBF-9185-B64F57C97470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3354692-A743-4CBF-9185-B64F57C97470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
