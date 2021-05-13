@@ -2,6 +2,7 @@
 using DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace DAL.Impl.Ef.Repositories
@@ -25,6 +26,11 @@ namespace DAL.Impl.Ef.Repositories
         {
             var res = await _ctx.ArticleInOrder.FirstOrDefaultAsync(x => x.Id == id);
             _ctx.Remove(res);
+        }
+
+        public async Task<List<ArticleInOrder>> GetAll()
+        {
+            return await _ctx.ArticleInOrder.ToListAsync();
         }
 
         public async Task<ArticleInOrder> GetById(Guid id)

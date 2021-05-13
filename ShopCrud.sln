@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Impl.Adonet", "DAL.Impl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Models", "DAL.Models\DAL.Models.csproj", "{BFEF9918-28AB-4D0E-B553-877A38143ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Impl.Ef", "DAL.Impl.Ef\DAL.Impl.Ef.csproj", "{B3354692-A743-4CBF-9185-B64F57C97470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Impl.Ef", "DAL.Impl.Ef\DAL.Impl.Ef.csproj", "{B3354692-A743-4CBF-9185-B64F57C97470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{51DCBBCE-9E41-4351-A766-74B943D6A551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C6F7C7F5-1D5F-48FF-9958-5B4C57A94C4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{B3354692-A743-4CBF-9185-B64F57C97470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3354692-A743-4CBF-9185-B64F57C97470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3354692-A743-4CBF-9185-B64F57C97470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DCBBCE-9E41-4351-A766-74B943D6A551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DCBBCE-9E41-4351-A766-74B943D6A551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DCBBCE-9E41-4351-A766-74B943D6A551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DCBBCE-9E41-4351-A766-74B943D6A551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F7C7F5-1D5F-48FF-9958-5B4C57A94C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F7C7F5-1D5F-48FF-9958-5B4C57A94C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F7C7F5-1D5F-48FF-9958-5B4C57A94C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F7C7F5-1D5F-48FF-9958-5B4C57A94C4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
