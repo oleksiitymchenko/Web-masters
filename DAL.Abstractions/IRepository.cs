@@ -7,10 +7,10 @@ namespace DAL.Abstractions
 {
     public interface IRepository<TEntity> where TEntity: IBaseEntity
     {
-        Task<TEntity> GetById(Guid id);
-        Task<TEntity> Create(TEntity entity);
-        Task Update(TEntity entity, Guid id);
-        Task Delete(Guid id);
-        Task<List<TEntity>> GetAll();
+        Task<TEntity> GetByIdAsync(Guid id);
+        Task<TEntity> CreateAsync(TEntity entity);
+        Task UpdateAsync(TEntity entity, Guid id);
+        Task DeleteAsync(Guid id);
+        Task<List<TEntity>> GetAllAsync();
     }
 }

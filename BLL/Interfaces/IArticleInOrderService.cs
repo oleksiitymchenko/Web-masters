@@ -1,8 +1,8 @@
-﻿using DAL.Models;
+﻿using Common;
 
 namespace BLL.Interfaces
 {
-    public interface IArticleInOrderService:IBaseService<ArticleInOrder>
+    public interface IArticleInOrderService:IBaseService<ArticleInOrderDto>
     {
     }
 }

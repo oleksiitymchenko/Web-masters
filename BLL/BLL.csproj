@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\DAL.Impl.Ef\DAL.Impl.Ef.csproj" />
     <ProjectReference Include="..\DAL.Models\DAL.Models.csproj" />
   </ItemGroup>
 

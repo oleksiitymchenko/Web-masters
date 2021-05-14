@@ -11,27 +11,27 @@ namespace BLL.Implementations
         {
 
         }
-        public Task<TEntityDto> Create(TEntityDto entityDto)
+        public Task<TEntityDto> CreateAsync(TEntityDto entityDto)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> Delete(Guid id)
+        public Task<bool> DeleteAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<TEntityDto>> GetAll()
+        public Task<List<TEntityDto>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<TEntityDto> GetById(Guid id)
+        public Task<TEntityDto> GetByIdAsync(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<TEntityDto> Update(TEntityDto entityDto, Guid id)
+        public Task<TEntityDto> UpdateAsync(TEntityDto entityDto, Guid id)
         {
             throw new NotImplementedException();
         }

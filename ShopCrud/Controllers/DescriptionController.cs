@@ -22,7 +22,7 @@ namespace ShopCrud.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
-            var entities = await _service.GetAll();
+            var entities = await _service.GetAllAsync();
             return Ok(entities);
         }
 
@@ -31,7 +31,7 @@ namespace ShopCrud.Controllers
         public async Task<ActionResult> GetAsync(string id)
         {
             var guidId = Guid.Parse(id);
-            var entity = await _service.GetById(guidId);
+            var entity = await _service.GetByIdAsync(guidId);
             return Ok(entity);
         }
 
@@ -39,7 +39,7 @@ namespace ShopCrud.Controllers
         [HttpPost]
         public async Task<ActionResult> PostAsync([FromBody] DescriptionDto value)
         {
-            var created = await _service.Create(value);
+            var created = await _service.CreateAsync(value);
             return Ok(created);
         }
 
@@ -48,7 +48,7 @@ namespace ShopCrud.Controllers
         public async Task<ActionResult> Put(string id, [FromBody] DescriptionDto value)
         {
             var guidId = Guid.Parse(id);
-            var updated = await _service.Update(value, guidId);
+            var updated = await _service.UpdateAsync(value, guidId);
             return Ok(updated);
         }
 
@@ -57,7 +57,7 @@ namespace ShopCrud.Controllers
         public async Task<ActionResult> Delete(string id)
         {
             var guidId = Guid.Parse(id);
-            var deleted = await _service.Delete(guidId);
+            var deleted = await _service.DeleteAsync(guidId);
             return Ok(deleted);
         }
     }

@@ -16,29 +16,29 @@ namespace DAL.Impl.Ef.Repositories
             _ctx = ctx;
         }
 
-        public Task<DescriptionInArticle> Create(DescriptionInArticle entity)
+        public Task<DescriptionInArticle> CreateAsync(DescriptionInArticle entity)
         {
             var result = _ctx.Add(entity);
             return Task.FromResult(result.Entity);
         }
 
-        public async Task Delete(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
             var res = await _ctx.DescriptionInArticle.FirstOrDefaultAsync(x => x.Id == id);
             _ctx.Remove(res);
         }
 
-        public async Task<List<DescriptionInArticle>> GetAll()
+        public async Task<List<DescriptionInArticle>> GetAllAsync()
         {
             return await _ctx.DescriptionInArticle.ToListAsync();
         }
 
-        public async Task<DescriptionInArticle> GetById(Guid id)
+        public async Task<DescriptionInArticle> GetByIdAsync(Guid id)
         {
             return await _ctx.DescriptionInArticle.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task Update(DescriptionInArticle entity, Guid id)
+        public async Task UpdateAsync(DescriptionInArticle entity, Guid id)
         {
             var dbEntity = await _ctx.DescriptionInArticle.FirstOrDefaultAsync(x => x.Id == id);
             dbEntity.ArticleId = entity.ArticleId;

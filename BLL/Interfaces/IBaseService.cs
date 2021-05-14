@@ -6,10 +6,10 @@ namespace BLL.Interfaces
 {
     public interface IBaseService<TEntityDto>
     {
-        Task<TEntityDto> Create(TEntityDto entityDto);
-        Task<TEntityDto> Update(TEntityDto entityDto, Guid id);
-        Task<bool> Delete(Guid id);
-        Task<TEntityDto> GetById(Guid id);
-        Task<List<TEntityDto>> GetAll();
+        Task<TEntityDto> CreateAsync(TEntityDto entityDto);
+        Task<TEntityDto> UpdateAsync(TEntityDto entityDto, Guid id);
+        Task<bool> DeleteAsync(Guid id);
+        Task<TEntityDto> GetByIdAsync(Guid id);
+        Task<List<TEntityDto>> GetAllAsync();
     }
 }
