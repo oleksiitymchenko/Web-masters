@@ -1,3 +1,5 @@
+using BLL.Extensions;
+using DAL.Impl.Ef;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,8 @@ namespace ShopCrud
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.RegisterBLL();
+            services.RegisterEfCoreImplementation(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
