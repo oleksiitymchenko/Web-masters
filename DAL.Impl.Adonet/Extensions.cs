@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DAL.Impl.Adonet
 {
-    class Extensions
+    public static class Extensions
     {
+        public static IServiceCollection RegisterAdoNetImplementation(this IServiceCollection services, IConfiguration configuration)
+        {
+            return services;
+        }
     }
 }
